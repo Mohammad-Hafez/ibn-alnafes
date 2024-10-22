@@ -1,0 +1,22 @@
+{
+    "welcome": "مرحبا",
+    "title" : "العامر",
+    "description": "هذا وصف باللغة العربية",
+    "languageSwitcher" : "تغيير اللغة",
+    "subdescription": "Your wallet will thank you!  Huge discounts on everything you need.",
+    "jod" : "دينار",
+    "buttons":{
+      "login" : "تسجيل دخول"
+    },
+    "nav":{
+      "cart" : "العربة"
+    },
+    "slider" :{
+      "more" : "مشاهدة المزيد"
+    },
+    "tabletSlider" :{
+      "header" : "أجهزة تابلت"
+    }
+
+  }
+  

@@ -1,0 +1,20 @@
+{
+    "welcome": "Welcome",
+    "title" : "Al-Amer Mobile",
+    "description": "This is an English description",
+    "subdescription": "Your wallet will thank you!  Huge discounts on everything you need.",
+    "jod" : "JOD",
+    "buttons":{
+      "login" : "Login"
+    },
+    "nav":{
+      "cart" : "Cart"
+    },
+    "slider" :{
+      "more" : "View More"
+    },
+    "tabletSlider" :{
+      "header" : "Tablet Devices"
+    }
+  }
+  
