@@ -1,0 +1,39 @@
+/* styles/EmblaCarousel.css */
+
+.embla {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    
+    /* Adjust based on your layout */
+}
+
+.embla__container {
+    display: flex;
+    direction: ltr; 
+}
+html[dir='rtl'] .embla__container {
+    direction: rtl;
+  }
+.embla__slide {
+    flex: 0 0 25%;
+    /* 100% / 4 slides = 25% per slide */
+    box-sizing: border-box;
+    /* Ensure padding and border do not affect width */
+}
+
+/* Example responsive styles */
+
+@media (max-width: 768px) {
+    .embla__slide {
+        flex: 0 0 50%;
+        /* Show 2 slides on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .embla__slide {
+        flex: 0 0 100%;
+        /* Show 1 slide on mobile screens */
+    }
+}
