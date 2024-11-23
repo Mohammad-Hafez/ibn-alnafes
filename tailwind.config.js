@@ -8,10 +8,20 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        customTeal: '#39545D',
+        customNude: '#ECE4DE',
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      addUtilities({
+        '.dir_ltr': {
+          direction: 'ltr',
+        },
+      });
+    },
+  ],
 };

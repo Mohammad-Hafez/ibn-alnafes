@@ -1,20 +1,22 @@
 {
-    "welcome": "Welcome",
-    "title" : "Al-Amer Mobile",
-    "description": "This is an English description",
-    "subdescription": "Your wallet will thank you!  Huge discounts on everything you need.",
-    "jod" : "JOD",
-    "buttons":{
-      "login" : "Login"
-    },
-    "nav":{
-      "cart" : "Cart"
-    },
-    "slider" :{
-      "more" : "View More"
-    },
-    "tabletSlider" :{
-      "header" : "Tablet Devices"
-    }
+  "ibn_alnafis":"Ibn Al-Nafis",
+  "title": "Ibn Al-Nafis Bakery",
+  "meta_title": "Ibn Al-Nafis",
+  "meta_description": "The best fresh bakery and pastries.",
+  "meta_keywords": "bakery, pastries, Ibn Al-Nafis",
+  "jod": "JOD",
+  "buttons": {
+    "login": "Login",
+    "more": "View More"
+  },
+  "nav": {
+  },
+  "links": {
+    "cart": "Cart",
+    "home": "Home",
+    "restaurant": "Restaurant",
+    "bakery": "Bakery",
+    "pastry": "Pastry",
+    "recipes": "Recipes"
   }
-  
+}

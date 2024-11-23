@@ -1,22 +1,22 @@
 {
-    "welcome": "مرحبا",
-    "title" : "العامر",
-    "description": "هذا وصف باللغة العربية",
-    "languageSwitcher" : "تغيير اللغة",
-    "subdescription": "Your wallet will thank you!  Huge discounts on everything you need.",
-    "jod" : "دينار",
-    "buttons":{
-      "login" : "تسجيل دخول"
-    },
-    "nav":{
-      "cart" : "العربة"
-    },
-    "slider" :{
-      "more" : "مشاهدة المزيد"
-    },
-    "tabletSlider" :{
-      "header" : "أجهزة تابلت"
-    }
-
+  "ibn_alnafis":"إبن النفيس",
+  "title": "مخبز إبن النفيس",
+  "meta_title": "إبن النفيس",
+  "meta_description": "أشهى المخبوزات والحلويات الطازجة.",
+  "meta_keywords": "مخبوزات, حلويات, إبن النفيس",
+  "jod": "دينار أردني",
+  "buttons": {
+    "login": "تسجيل الدخول",
+    "more": "عرض المزيد"
+  },
+  "nav": {
+  },
+  "links": {
+    "cart": "عربة التسوق",
+    "home": "الرئيسية",
+    "restaurant": "المطعم",
+    "bakery": "المخبز",
+    "pastry": "الحلويات",
+    "recipes": "الوصفات"
   }
-  
+}

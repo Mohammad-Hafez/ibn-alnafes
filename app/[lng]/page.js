@@ -1,10 +1,9 @@
+import '@/styles/globals.css'
 import { useTranslation } from '../i18n'
-import '../style/globals.css'
 
 export default async function Page({ params: { lng } }) {
   const { t } = await useTranslation(lng)
 
-  const images = [  ]
   return (
     <>
       <div className='b-gray-100 py-6'>
