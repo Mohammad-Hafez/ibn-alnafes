@@ -1,5 +1,7 @@
 import Image from "next/image";
-
+import img_1 from '@/public/assets/images/baked.svg'
+import img_2 from '@/public/assets/images/baked2.svg'
+import img_3 from '@/public/assets/images/pizza.svg'
 export default function AboutSection({ t }) {
   return (
     <section className="py-16 px-4 md:px-8 lg:px-16">
@@ -11,10 +13,10 @@ export default function AboutSection({ t }) {
           </p>
         </div>
         <div className="grid grid-cols-2 gap-4">
-          {[1, 2, 3, 4].map((i) => (
+          {[img_1, img_2, img_3].map((i) => (
             <div key={i} className="relative aspect-square">
               <Image
-                src={`/placeholder.svg`}
+                src={i}
                 alt={`About image ${i}`}
                 fill
                 className="object-cover rounded-lg"
