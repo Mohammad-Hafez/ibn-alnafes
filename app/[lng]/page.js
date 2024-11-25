@@ -1,17 +1,31 @@
 import '@/styles/globals.css'
-import { useTranslation } from '../i18n'
+import Image from "next/image";
+import { useTranslation } from "../i18n";
+import HeroSection from "@/components/Home/HeroSection";
+import AboutSection from "@/components/Home/AboutSection";
+import BakerySection from "@/components/Home/BakerySection";
+import BestBakedSection from "@/components/Home/BestBakedSection";
+import SandwichSection from "@/components/Home/SandwichSection";
+import RestaurantSection from "@/components/Home/RestaurantSection";
+import RecipesSection from "@/components/Home/RecipesSection";
+import ContactSection from "@/components/Home/ContactSection";
+import PastrySection from "@/components/Home/PastrySection";
 
-export default async function Page({ params }) {
-  const { lng } = await params;
-  const { t } = await useTranslation(lng)
+export default async function Home({ params: { lng } }) {
+  const { t } = await useTranslation(lng);
 
   return (
-    <>
-      <div className='b-gray-100 py-6'>
-        <div className='flex items-center justify-between w-5/6 mx-auto'>
-          <h5 className='blueGradiant font-semibold text-3xl'>homeeeeeeeeeeeeeee IBN EL-NAFEES</h5>
-        </div>
-      </div>
-    </>
-  )
+    <main className="min-h-screen">
+      <HeroSection t={t} />
+      <AboutSection t={t} />
+      <BakerySection t={t} />
+      <BestBakedSection lng={lng}/>
+      <SandwichSection t={t} />
+      <RestaurantSection t={t} />
+      <RecipesSection t={t} />
+      <ContactSection lng={lng}/>
+      <PastrySection t={t} />
+    </main>
+  );
 }
+
