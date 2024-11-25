@@ -10,7 +10,7 @@ import Link from "next/link";
 import { CiBoxList } from "react-icons/ci";
 import { LuCakeSlice } from "react-icons/lu";
 
-const Navbar = ({ lng  }) => {
+const Navbar = ({ lng }) => {
   const [current, setCurrent] = useState("home");
   const { t } = useClientTranslation(lng);
 
@@ -21,18 +21,12 @@ const Navbar = ({ lng  }) => {
       icon: <ShopOutlined />,
       children: [
         {
-          type: "group",
-          label: t("links.restaurant"),
-          children: [
-            {
-              label: t("links.sandwichs"),
-              key: "restaurant_sandwichs",
-            },
-            {
-              label: t("links.boxes"),
-              key: "restaurant_boxes",
-            },
-          ],
+          label: t("links.sandwichs"),
+          key: "restaurant_sandwichs_1",
+        },
+        {
+          label: t("links.boxes"),
+          key: "restaurant_boxes_1",
         },
       ],
     },
@@ -42,18 +36,12 @@ const Navbar = ({ lng  }) => {
       icon: <PiChefHat />,
       children: [
         {
-          type: "group",
-          label: t("links.bakery"),
-          children: [
-            {
-              label: t("links.sandwichs"),
-              key: "restaurant_sandwichs",
-            },
-            {
-              label: t("links.boxes"),
-              key: "restaurant_boxes",
-            },
-          ],
+          label: t("links.sandwichs"),
+          key: "bakery_sandwichs_1",
+        },
+        {
+          label: t("links.boxes"),
+          key: "bakery_boxes_1",
         },
       ],
     },
@@ -63,18 +51,12 @@ const Navbar = ({ lng  }) => {
       icon: <LuCakeSlice />,
       children: [
         {
-          type: "group",
-          label: t("links.pastry"),
-          children: [
-            {
-              label: t("links.sandwichs"),
-              key: "restaurant_sandwichs",
-            },
-            {
-              label: t("links.boxes"),
-              key: "restaurant_boxes",
-            },
-          ],
+          label: t("links.sandwichs"),
+          key: "pastry_sandwichs_1",
+        },
+        {
+          label: t("links.boxes"),
+          key: "pastry_boxes_1",
         },
       ],
     },
@@ -90,24 +72,25 @@ const Navbar = ({ lng  }) => {
     setCurrent(e.key);
   };
 
-  return <>
-      <nav className="px-5 lg:px-6 md:px-12 py-1 xl:px-24 flex items-center justify-between">
+  return (
+    <>
+      <nav className="px-5 lg:px-6 md:px-12 py-1 xl:px-24 flex items-center justify-between ">
         <Link href="/" className="flex items-center w-44 min-w-fit">
-          <Image src={logo} className="w-11 h-11 rounded-full shadow-sm me-2" alt="ibn alnafis logo"/>
+          <Image src={logo} className="w-11 h-11 rounded-full shadow-sm me-2" alt="ibn alnafis logo" />
           <h1 className="text-gray-900 font-semibold text-lg">
             {t("ibn_alnafis")}
           </h1>
         </Link>
         <Menu
-          className="w-10 lg:w-96 xl:w-auto border-none"
+          className="w-10 lg:w-96 xl:w-auto border-none dir_ltr"
           onClick={onClick}
           selectedKeys={[current]}
-          
           mode="horizontal"
           items={items}
         />
       </nav>
     </>
+  );
 };
 
 export default Navbar;

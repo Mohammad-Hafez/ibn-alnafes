@@ -19,7 +19,7 @@ const TopHeader = async ({ lng }) => {
           </h6>
         </div>
         <div>
-            <LanguageSwitcher lng={lng} t={t}/>
+            <LanguageSwitcher lng={lng} />
         </div>
       </div>
     </>

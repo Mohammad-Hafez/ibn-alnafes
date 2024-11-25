@@ -1,7 +1,8 @@
 import '@/styles/globals.css'
 import { useTranslation } from '../i18n'
 
-export default async function Page({ params: { lng } }) {
+export default async function Page({ params }) {
+  const { lng } = await params;
   const { t } = await useTranslation(lng)
 
   return (
